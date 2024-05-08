@@ -2,7 +2,7 @@
 This application provides a dynamic form where users can mark incorrect answers with an 'X'. It counts the marks and provides various functionalities like creating new forms and saving them.
 
 ## Setup
-1. Extract the Zip file
+1. Extract the Zip file / clone the repository from https://github.com/srikanthvd/errortrackingformapp.git
 2. Install dependencies using `pip install -r requirements.txt`.
 3. Run migrations `python manage.py migrate`.
 4. Start the server `python manage.py runserver`.
