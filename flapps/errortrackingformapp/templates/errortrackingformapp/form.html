@@ -1,0 +1,28 @@
+<!-- templates/testrecorder/form.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Form</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <form method="post" id="testForm">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div id="grid">
+            {% for row in data %}
+            <div class="row">
+                {% for cell in row %}
+                <div class="cell">{{ cell }}</div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+        <input type="hidden" name="data" id="formData">
+        <button type="submit">Save</button>
+    </form>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

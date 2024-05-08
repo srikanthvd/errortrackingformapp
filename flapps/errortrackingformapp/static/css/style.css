@@ -1,0 +1,14 @@
+/* static/css/style.css */
+.cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+}
+.row {
+    margin-bottom: 5px;
+}
+.marked {
+    background-color: black;
+}
